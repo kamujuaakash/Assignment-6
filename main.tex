@@ -1,0 +1,77 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+% \usetheme{Frankfurt}
+% \usetheme{Darmstadt}
+% \usetheme{Berlin}
+% \usetheme{Warsaw}
+% \usetheme{Berkeley}
+% \usetheme{Bergen}
+% \usetheme{CambridgeUS}
+% \usetheme{Copenhagen}
+
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\newcommand{\mysolution}{\noindent \textbf{Solution: }}
+
+\title{AI1110 - Probability and Random Variables\\
+        Assignment 6}
+\author{Aakash Kamuju (ai21btech11001)}
+\begin{document}
+\maketitle
+    % \begin{frame}{Table of Contents}
+    % \tableofcontents
+    % \end{frame}
+    \begin{frame}{Outline}
+    \tableofcontents
+    \end{frame}
+    \begin{frame}{Question}
+        \begin{section}{Question}
+            \begin{block}{EXAMPLE 5-11}
+             Suppose that the resistance r is uniform between 900 and 1100 $\Omega$.We shall determine the density function of the corresponding conductance\\
+             $$g = \frac{1}{r}$$\\
+             $\mathrm{f}_r(r)$ = $\frac{1}{200}$ S for r between 900 and 1100.\\
+             $\mathrm{f}_g(g) = \frac{1}{200g^2}$ for $\frac{1}{1100} < g < \frac{1}{900}$ `and 0 else where\\
+             $y = ax^2$ is the relation between r,g
+   \end{block}
+    \end{section}
+    \end{frame}
+    \begin{frame}{Solution}
+        \begin{section}{Solution}
+            \begin{block}{Solution}
+            $y = ax^2$  a $>$ 0     $g^\prime (x) $ = 2ax\\
+            If y $\le$ 0, then the equation y = a$x^2$ has no real solutions; hence $\mathrm{f}_y(y) = 0$. If y $>$ 0, then it has two solutions\\
+            $$x_1 = \sqrt{\frac{y}{a}},x_2 = -\sqrt{\frac{y}{a}}$$
+        \end{block}
+       \end{section}
+  \end{frame}
+  \begin{frame}
+        \begin{section}{Solution Continued}
+            \begin{block}{Solution Continued}
+            By using the fundamental theorem\\
+            $$\mathrm{f}_y(y)=\frac{\mathrm{f}_x(x_1)}{g^\prime(x_1)}+....+\frac{\mathrm{f}_x(x_n)}{g^\prime(x_n)}+...$$
+            we get,
+            $$\mathrm{f}_y(y)=\frac{\mathrm{f}_x(x_1)}{g^\prime(x_1)}+\frac{\mathrm{f}_x(x_2)}{g^\prime(x_2)}$$
+        \end{block}
+       \end{section}
+  \end{frame}
+    \begin{frame}
+        \begin{section}{Solution Continued}
+            \begin{block}{Solution Continued}
+            By using the fundamental theorem\\for $y >0$
+            $$\mathrm{f}_y(y)=\frac{1}{2a\sqrt{\frac{y}{a}}}[\mathrm{f}_x(\sqrt\frac{y}{a}) + \mathrm{f}_x(-\sqrt\frac{y}{a})]$$ 
+            for $y<0$
+            $$\mathrm{f}_y(y)=0$$
+        \end{block}
+       \end{section}
+  \end{frame}
+  \begin{frame}
+        \begin{section}{Solution Continued}
+            \begin{block}{Solution Continued}
+            From above we note that\\for $y >0$
+            $$\mathrm{F}_y(y)=P\cbrak{-\sqrt\frac{y}{a} \le x \le \sqrt\frac{y}{a}}= \mathrm{F}_x(\sqrt\frac{y}{a}) - \mathrm{F}_x(-\sqrt\frac{y}{a})$$ 
+            for $y<0$
+            $$\mathrm{F}_y(y)=0$$
+        \end{block}
+       \end{section}
+  \end{frame}
+\end{document}
